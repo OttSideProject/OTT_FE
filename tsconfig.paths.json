@@ -11,7 +11,8 @@
       "@hoc/*": ["./hoc/*"],
       "@utils/*": ["./utils/*"],
       "@api/*": ["./api/*"],
-      "@routes/*": ["./routes/*"]
+      "@routes/*": ["./routes/*"],
+      "@mocks/*": ["./mocks/*"]
     }
   }
 }
