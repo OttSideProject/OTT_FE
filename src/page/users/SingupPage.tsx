@@ -2,7 +2,7 @@
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import axios from 'axios'; // axios import 추가
+import axios from 'axios';
 import {
   PageWrapper,
   Container,
@@ -65,13 +65,9 @@ export const SingupPage = () => {
     console.log(data);
     axios({
       method: 'POST',
-      url: 'users/join',
+      url: 'http://3.36.90.213:8080/users/join',
       data: data,
       withCredentials: true,
-      //headers: {
-      //  'Content-Type': 'application/json',
-      //  'Access-Control-Allow-Origin': '*', // CORS 우회를 위한 헤더 추가
-      //},
     })
       .then((result) => {
         debugger;
